@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6fa7a64-1b23-4dd0-b4fd-e1d6cc13e8b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PyTorchQym.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartPole/CartPole1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartPole/CartPole2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CartPole/CartPole4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/snake-ai-pytorch-main.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnakeAI/snake_game_human.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model.pth" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model/model.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model_combined.pth" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model/model_combined.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,5 +80,16 @@
       <updated>1739782689129</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

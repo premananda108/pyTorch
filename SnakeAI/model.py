@@ -15,7 +15,7 @@ class Linear_QNet(nn.Module):
         x = self.linear2(x)
         return x
 
-    def save(self, file_name='model_combined.pth'): # Changed save file name to model_combined.pth
+    def save(self, file_name='model.pth'):
         model_folder_path = './model'
         if not os.path.exists(model_folder_path):
             os.makedirs(model_folder_path)
@@ -57,7 +57,7 @@ class QTrainer:
                 Q_new = reward[idx] + self.gamma * torch.max(self.model(next_state[idx]))
 
             target[idx][torch.argmax(action[idx]).item()] = Q_new
-
+    
         # 2: Q_new = r + y * max(next_predicted Q value) -> only do this if not done
         # pred.clone()
         # preds[argmax(action)] = Q_new
@@ -66,3 +66,6 @@ class QTrainer:
         loss.backward()
 
         self.optimizer.step()
+
+
+

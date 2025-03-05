@@ -6,6 +6,7 @@ import numpy as np
 
 pygame.init()
 font = pygame.font.Font('arial.ttf', 25)
+#font = pygame.font.SysFont('arial', 25)
 
 class Direction(Enum):
     RIGHT = 1
@@ -23,17 +24,16 @@ BLUE2 = (0, 100, 255)
 BLACK = (0,0,0)
 
 BLOCK_SIZE = 20
-SPEED = 40 # No longer used in play_step, speed is now determined by framerate
+SPEED = 40
 
 class SnakeGameAI:
 
     def __init__(self, w=640, h=480):
         self.w = w
         self.h = h
-        self.block_size = BLOCK_SIZE
         # init display
         self.display = pygame.display.set_mode((self.w, self.h))
-        pygame.display.set_caption('Snake Game AI')
+        pygame.display.set_caption('Snake')
         self.clock = pygame.time.Clock()
         self.reset()
 
@@ -63,20 +63,20 @@ class SnakeGameAI:
 
     def play_step(self, action, view=True):
         self.frame_iteration += 1
-        # 1. collect user input / event
+        # 1. collect user input
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
-
+        
         # 2. move
         self._move(action) # update the head
         self.snake.insert(0, self.head)
-
+        
         # 3. check if game over
         reward = 0
         game_over = False
-        if self.is_collision() or self.frame_iteration > 100*len(self.snake): # Increased frame_iteration limit
+        if self.is_collision() or self.frame_iteration > 100*len(self.snake):
             game_over = True
             reward = -10
             return reward, game_over, self.score
@@ -88,11 +88,11 @@ class SnakeGameAI:
             self._place_food()
         else:
             self.snake.pop()
-
+        
         # 5. update ui and clock
         if view:
             self._update_ui()
-            self.clock.tick(SPEED) # Control speed using clock.tick, SPEED now framerate
+            self.clock.tick(SPEED)
         # 6. return game over and score
         return reward, game_over, self.score
 
@@ -113,9 +113,9 @@ class SnakeGameAI:
     def _update_ui(self):
         self.display.fill(BLACK)
 
-        for point in self.snake:
-            pygame.draw.rect(self.display, BLUE1, pygame.Rect(point.x, point.y, BLOCK_SIZE, BLOCK_SIZE))
-            pygame.draw.rect(self.display, BLUE2, pygame.Rect(point.x+4, point.y+4, 12, 12))
+        for pt in self.snake:
+            pygame.draw.rect(self.display, BLUE1, pygame.Rect(pt.x, pt.y, BLOCK_SIZE, BLOCK_SIZE))
+            pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+4, pt.y+4, 12, 12))
 
         pygame.draw.rect(self.display, RED, pygame.Rect(self.food.x, self.food.y, BLOCK_SIZE, BLOCK_SIZE))
 
@@ -125,11 +125,7 @@ class SnakeGameAI:
 
 
     def _move(self, action):
-        # action = [straight, right, left]
-        # Example actions:
-        # [1, 0, 0] -> straight
-        # [0, 1, 0] -> right turn
-        # [0, 0, 1] -> left turn
+        # [straight, right, left]
 
         clock_wise = [Direction.RIGHT, Direction.DOWN, Direction.LEFT, Direction.UP]
         idx = clock_wise.index(self.direction)
@@ -138,10 +134,10 @@ class SnakeGameAI:
             new_dir = clock_wise[idx] # no change
         elif np.array_equal(action, [0, 1, 0]):
             next_idx = (idx + 1) % 4
-            new_dir = clock_wise[next_idx] # right turn
+            new_dir = clock_wise[next_idx] # right turn r -> d -> l -> u
         else: # [0, 0, 1]
             next_idx = (idx - 1) % 4
-            new_dir = clock_wise[next_idx] # left turn
+            new_dir = clock_wise[next_idx] # left turn r -> u -> l -> d
 
         self.direction = new_dir
 
