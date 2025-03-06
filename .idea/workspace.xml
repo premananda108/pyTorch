@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6fa7a64-1b23-4dd0-b4fd-e1d6cc13e8b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SnakeAI/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model.pth" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model/model.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model_based.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model_combined.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model_grid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnakeAI/text_rus.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
