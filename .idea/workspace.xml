@@ -8,10 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnakeAI/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnakeAI/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeAI/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeAI/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnakeAI/model/model.pth" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model/model.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnakeAI/model/model_combined.pth" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeAI/model/model_combined.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
